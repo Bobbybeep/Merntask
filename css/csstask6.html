@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="file:///C:/Users/91798/OneDrive/Desktop/styles.css">
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.avatar img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cancel-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background-color: #e53935;
+}
+
+.forgot-password {
+    color: #555;
+    text-decoration: none;
+}
+
+.forgot-password span {
+    color: #4CAF50;
+}
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="avatar">
+            <img src="./task6css_files/Screenshot 2024-06-13 220023.png" alt="Avatar">
+        </div>
+        <form class="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password">
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+
+            <div class="options">
+                <button type="button" class="cancel-btn">Cancel</button>
+                <a href="file:///C:/Users/91798/OneDrive/Desktop/task6.html#" class="forgot-password">Forgot <span>password?</span></a>
+            </div>
+        </form>
+    </div>
+
+</body></html>
